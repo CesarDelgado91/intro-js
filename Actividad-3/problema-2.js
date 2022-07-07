@@ -5,7 +5,7 @@ let jugador1 = 0;
 let jugador2 = 0;
 
 jugador1 = Number(prompt("jugador 1 elige: [1] piedra, [2] papel o [3] tijeras"));
-jugador2 = Number(prompt("jugador 1 elige: [1] piedra, [2] papel o [3] tijeras"));
+jugador2 = Number(prompt("jugador 2 elige: [1] piedra, [2] papel o [3] tijeras"));
 
 
 switch(jugador1){
@@ -20,7 +20,7 @@ switch(jugador1){
             break;
             
         case 3:
-            console.log("gana jugador1");
+            console.log("gana jugador 1");
             break;    
        }
        break;
