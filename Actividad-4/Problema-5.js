@@ -1,4 +1,4 @@
-let inicio = Number(prompt("Se excluiran 10 numeros a partir del numero que indique (1 -100)"));
+let inicio = Number(prompt("se excluira un rango de 10 numeros a partir del numero que ingrese (1 -100)"));
 let fin= inicio + 10;
 
 for (let index = 1; index <= 100; index++) {
