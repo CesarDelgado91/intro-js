@@ -1,12 +1,12 @@
 
 
 let numero = Number(prompt("ingrese un numero"));
-let inicio = 1;
+let i = 1;
 
-while(inicio<=numero){
+while(i<=numero){
     
-  if( inicio % 5 == 0) {
-        console.log(inicio);
+  if( i % 5 == 0) {
+        console.log(i);
     }
-    inicio++;
+    i++;
 }
