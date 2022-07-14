@@ -2,9 +2,9 @@
 
 
 //### Problema 1:
-​
+
 //Crea una función para encontrar la diferencia de edad entre el miembro mas viejo y el más jóven de la familia. Retorna como resultado un objeto indicando las edades de cada miembro, y la diferencia de edad.
-​
+
 //```jsx
 const Family = [
     {
@@ -29,9 +29,15 @@ const Family = [
     }
   ];
 
-let oldest = Family.filter(Family => Family.oldest ==  );
-console.log(oldest)
 
+function getEdad(arr){
+ const edades = Family.map((objeto) => objeto.age);
+ edades.sort(function (a,b){return a-b});
+ let dife=(edades[edades.length-1])-edades[0];
+ Family.push({oldest:edades[0],youngest:edades[edades.length-1], "age-difference":dife});
+ return Family;
+}
+console.log(getEdad(Family));
 
 
 
@@ -54,7 +60,7 @@ Del siguiente arreglo de numeros, retorna la suma de todos los que son positivos
 const numbers = [ 1, -4, 12, 0, -3, 29, -150];
 
 let suma = 0
-const filtro = numbers.filter((valor) => valor > 0);
+const filtro = numbers.filter((valor) => valor >= 0);
 
 for (let i = 0; i < filtro.length; i++){
     suma += filtro[i]
@@ -74,6 +80,10 @@ const input = [
     ['d', 'f', 'g'],
   ];
 
+var result = { }; 
+ 
+
+console.log(result);
 
 
 
@@ -101,7 +111,13 @@ del siguiente arreglo:   */
 
 const arr = [3,4,6,1,5,2,9,10,23,12]
 
+let lista = arr.sort((a,b) => a-b);
 
+const segbajo = lista[1];
+
+const segalto = lista[lista.length-2];
+
+console.log("Este es el Numero segundo mas bajo:", segbajo+"\n Este es el Numero segundo mas alto:",segalto)
 
 
 /* ### Problema 5:
@@ -150,7 +166,9 @@ let info = [
 
 
 // 1. Retorna en un array las calificaciones de todos los estudiantes.
+const calificacion = materias.map((materias) => materias.calificacion);
 
+console.log(calificacion);
 
 
 // 2. Retorna el promedio de cada uno de los alumnos, devolviendo un arreglo con objetos como esto: 
@@ -179,6 +197,8 @@ let info = [
 //2. Retorna la calificación mas alta
 
 
+
+
 // ### Problema 6
 
 
@@ -190,10 +210,15 @@ matriz = [7,2,5,3,5,3]
 br = [7,2,5,4,6,3,5,3]
 
 
+for(let num of br){
+
+  if(!matriz.includes(num)){
+
+      console.log(num)
+  }
+}
 
 // Los números que faltan en arr son `[4,6]`
-
-
 // ### Problema 7
 
 // **Objetos-Recursividad:**
@@ -221,7 +246,9 @@ const root2 = {
 };
 
 
+const id = root2.map((root2) => root2.id);
 
+console.log(id);
 
 //Contraer
 
