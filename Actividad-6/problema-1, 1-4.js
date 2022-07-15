@@ -38,4 +38,4 @@ console.log(animals);
 
 var animals= ['eagle','parrot','monkey','boar','lion']
 
-animals.indexOf('parrot');
+console.log(animals.indexOf('parrot'));

@@ -165,15 +165,44 @@ let info = [
 
 
 
+
+let cal =[];
+let prom = [];
+let calbaja = 100;
+let calalta = 0;
+
+for (const a of info){
+  let promedio = 0;
+    for (const b of a.materias){
+      if(calalta < b.calificacion){
+        calalta = b.calificacion;
+      }
+      if(calbaja > b.calificacion){
+        calbaja = b.calificacion;
+      }
+      cal.push(b.calificacion);
+      promedio += b.calificacion;
+    }
+    promedio = promedio / 3;
+    prom.push({
+      name: a.nombre,
+      promedio: promedio
+    })
+}
+
+console.log(cal);
+console.log(prom);
+console.log("Calificacion mas Baja" + " " + calbaja);
+console.log("Calificacion mas Alta" + " " + calalta);
+
+
+
+
+
 // 1. Retorna en un array las calificaciones de todos los estudiantes.
-const calificacion = materias.map((materias) => materias.calificacion);
-
-console.log(calificacion);
-
 
 // 2. Retorna el promedio de cada uno de los alumnos, devolviendo un arreglo con objetos como esto: 
-
-/* [
+   /* [
   { 
     "Jorge": {
       "promedio": 8.6
@@ -190,8 +219,6 @@ console.log(calificacion);
     }
   }
 ] */
-
-
 // 1. Retorna la calificación mas baja
 
 //2. Retorna la calificación mas alta
