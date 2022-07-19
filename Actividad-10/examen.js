@@ -277,6 +277,9 @@ const id = root2.map((root2) => root2.id);
 
 console.log(id);
 
+
+
+
 //Contraer
 
 marca_de_verificación_blanca
