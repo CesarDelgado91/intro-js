@@ -1,0 +1,8 @@
+.object-fit{
+    object-fit: cover;
+    height: 100%;
+}
+
+bg-carro{
+    background-color: url(img/img1.jpg);
+}
