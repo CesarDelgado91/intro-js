@@ -1,4 +1,4 @@
-const company = [
+const salas = [
 {
     nombre:"High-Back Bench",
     modelo:"ikea",
@@ -53,5 +53,6 @@ const company = [
     precio:"39.95",
     imagen:"https://secure.img1-fg.wfcdn.com/im/38830419/compr-r85/1854/185464012/rehoboth-bench.jpg"
 },
+
 ]
 ;

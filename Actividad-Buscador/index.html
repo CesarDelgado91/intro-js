@@ -11,14 +11,16 @@
     <div class="container">
        
         <div class="row p-5">
-            <div class="col-3">
+            <div class="col-lg-3 col-md-2">
                <div class="row ">
                    <div class="col">
                     <nav class="navbar bg-light">
                         <div class="container-fluid">
-                          <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                          <form id="form-busqueda" class="d-flex" role="search">
+                            <input type="text" class="form-control" id="inputName" placeholder="Search" aria-label="Search">
+                            <button type="submit" class="btn btn-success ">Buscar</button>
+                            <!-- <input id="inputsearch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button> -->
                           </form>
                         </div>
                       </nav>
@@ -36,7 +38,7 @@
                         <a class="nav-link" href="#">Liddy</a>
                     </nav>
 
-                   </div>
+                </div>
                     
                         
                     
@@ -46,15 +48,18 @@
             </div>
 
             <div class="col-9">
-               <div class="row row-cols-3">
-
+               <div id="box-salas" class="row row-cols-3">
+                 
                </div>
             </div>
 
 
         </div>
 
-
-    </div>
+  
+    </div>  
+    <script src="db.js"></script>
+    <script src="code.js"></script>
+    
 </body>
 </html>
